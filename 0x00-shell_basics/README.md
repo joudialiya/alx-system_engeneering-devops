@@ -10,4 +10,5 @@
 9-firstdirdeletion 		: Delete the /tmp/my_first_derictory
 10-back 			: Back to previous directory
 11-lists			: Display all of the content of the wd, its parrent, the /boot directory is long format 
-12-file-type			: Display informatino about the /tmp/iamafile [uses file command]
+12-filetype			: Display informatino about the /tmp/iamafile [uses file command]
+13-symbolic_link		: Create symbolic link to /bin/ls in thewd with the name __ls__
