@@ -12,5 +12,6 @@
 11-lists			: Display all of the content of the wd, its parrent, the /boot directory is long format 
 12-file_type			: Display informatino about the /tmp/iamafile [uses file command]
 13-symbolic_link		: Create symbolic link to /bin/ls in thewd with the name __ls__
-14-copy_html			: copy the wd .html files to the parent dir only if they did not exist there or were newer that the ones in the parent dir
-100-lets_move			: move the files that begin with an upper letter to /tmp/u is it exist  
+14-copy_html			: Copy the wd .html files to the parent dir only if they did not exist there or were newer that the ones in the parent dir
+100-lets_move			: Move the files that begin with an upper letter to /tmp/u is it exist  
+101-clean_emacs			: Delete tha files that end with ~
