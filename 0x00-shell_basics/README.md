@@ -4,4 +4,5 @@
 3-listfiles			: Display the contents of the working dir in a long forme
 4-listmorefiles			: Display the contents of the working dir in a long forme [the hidden ones also]
 5-listfilesdigitonly		: Display the contents of the working dir in a long forme [the hidden ones also] with informations in  numeric format
-6-firstdirectory		: Create a my_first_directory dir in /tmp
+6-firstdirectory		: Create a my_first_directory dir in /tmpi
+7-movethatfile			: Move a file called "betty" from /tmp to /tmp/my_first_directory
