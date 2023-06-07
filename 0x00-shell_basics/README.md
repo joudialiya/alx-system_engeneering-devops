@@ -2,3 +2,4 @@
 1-listit			: Display the contents of the working dir
 2-bring_me_home			: Change the working dir to the user's home dir
 3-listfiles			: Display the contents of the working dir in a long forme
+4-listmorefiles			: Display the contents of the working dir in a long forme [the hidden ones also]
