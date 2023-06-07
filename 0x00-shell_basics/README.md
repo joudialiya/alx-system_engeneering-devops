@@ -9,3 +9,4 @@
 8-firstdelete			: Delete the betty file in /tmp/my_first_directory
 9-firstdirdeletion 		: Delete the /tmp/my_first_derictory
 10-back 			: Back to previous directory
+11-lists			: Display all of the content of the wd, its parrent, the /boot directory is long format 
