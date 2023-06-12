@@ -1,2 +1,2 @@
 #!/bin/bash
-rm *.js 2> /dev/null 
+find . -type d | grep -v "^\.$" | wc -l
