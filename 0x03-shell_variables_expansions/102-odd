@@ -1,2 +1,2 @@
 #!/bin/bash
-grep "^     \d*[02468]"
+nl -n ln |grep -E "^[0-9]*[13579] " |cut -f2
