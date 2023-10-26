@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+#print "TEXT" 10 times
+# shellcheck disable=SC2034
+input="/etc/passwd"
+while IFS= read -r line; 
+do
+	echo "$line"
+	USERNAME=$(echo "$line" | cut -d ":" -f 1)
+	GROUP_ID=$(echo "$line" | cut -d ":" -f 4)
+	HOME_DIRECTORY=$(echo "$line" | cut -d ":" -f 6)
+	USER_ID=$(echo "$line" | cut -d ":" -f 3)
+	USER_ID_INFO=$(echo "$line" | cut -d ":" -f 5)
+	PASSWORD=$(echo "$line" | cut -d ":" -f 2)
+	TEXT="The user $USERNAME is part of the $GROUP_ID gang, lives in $HOME_DIRECTORY and rides COMMAND/SHELL. $USER_ID's place is protected by the passcode $PASSWORD, more info about the user here: $USER_ID_INFO"
+	echo "$TEXT"
+done < "$input"
