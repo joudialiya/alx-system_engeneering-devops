@@ -4,13 +4,12 @@
 TEXT="Best School"
 i=0
 
-while (( i < 10 ));
+while [ $i -lt 10 ];
 do
-	if (( i != 8 ));
+	if [ $i -ne 8 ];
 	then
 		echo "$TEXT"
-	else
-		
+	else		
 		echo "HI"
 	fi
 	i=$((i + 1))
