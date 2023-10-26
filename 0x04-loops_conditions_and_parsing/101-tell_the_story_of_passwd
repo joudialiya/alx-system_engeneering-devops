@@ -4,7 +4,6 @@
 input="/etc/passwd"
 while IFS= read -r line; 
 do
-	echo "$line"
 	USERNAME=$(echo "$line" | cut -d ":" -f 1)
 	GROUP_ID=$(echo "$line" | cut -d ":" -f 4)
 	HOME_DIRECTORY=$(echo "$line" | cut -d ":" -f 6)
