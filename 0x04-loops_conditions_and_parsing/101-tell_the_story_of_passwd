@@ -11,6 +11,7 @@ do
 	USER_ID=$(echo "$line" | cut -d ":" -f 3)
 	USER_ID_INFO=$(echo "$line" | cut -d ":" -f 5)
 	PASSWORD=$(echo "$line" | cut -d ":" -f 2)
-	TEXT="The user $USERNAME is part of the $GROUP_ID gang, lives in $HOME_DIRECTORY and rides COMMAND/SHELL. $USER_ID's place is protected by the passcode $PASSWORD, more info about the user here: $USER_ID_INFO"
+	SHELL=$(echo "$line" | cut -d ":" -f 7)
+	TEXT="The user $USERNAME is part of the $GROUP_ID gang, lives in $HOME_DIRECTORY and rides $SHELL. $USER_ID's place is protected by the passcode $PASSWORD, more info about the user here: $USER_ID_INFO"
 	echo "$TEXT"
 done < "$input"
