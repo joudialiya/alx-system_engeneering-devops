@@ -6,10 +6,9 @@ i=0
 
 while [ $i -lt 10 ];
 do
-	if [ $i -ne 8 ];
+	echo "$TEXT"
+	if [ $i -eq 8 ];
 	then
-		echo "$TEXT"
-	else		
 		echo "HI"
 	fi
 	i=$((i + 1))

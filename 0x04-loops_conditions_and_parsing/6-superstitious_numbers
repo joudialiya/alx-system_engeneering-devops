@@ -12,15 +12,10 @@ while (( i <= MAX ));
 do
 	echo "$i"
 
-	if (( i == 4 ));
-	then
-		echo "$TEXT_BAD_CHINA"
-	elif (( i == 9 ))
-	then
-		echo "$TEXT_BAD_JAPAN"
-	elif (( i == 17 ))
-	then
-		echo "$TEXT_BAD_ITALY"
-	fi
+	case "$i" in
+		4)	echo "$TEXT_BAD_CHINA";;
+		9)	echo "$TEXT_BAD_JAPAN";;
+		17)	echo "$TEXT_BAD_ITALY";;
+	esac
 	i=$((i + 1))
 done
