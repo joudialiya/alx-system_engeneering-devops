@@ -9,7 +9,7 @@ do
 	echo "$TEXT"
 	if [ $i -eq 8 ];
 	then
-		echo "HI"
+		echo "Hi"
 	fi
 	i=$((i + 1))
 done
