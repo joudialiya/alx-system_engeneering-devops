@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+#print "TEXT" 10 times
+# shellcheck disable=SC2034
+TEXT="Best School"
+TEXT_BAD="bad luck"
+TEXT_GOOD="good luck"
+i=0
+
+while (( i < 10 ));
+do
+	if (( i == 3 ));
+	then
+		echo "$TEXT_BAD"
+	elif (( i == 7 ))
+	then
+		echo "$TEXT_GOOD"
+	else
+		echo "$TEXT"
+	fi
+	i=$((i + 1))
+done

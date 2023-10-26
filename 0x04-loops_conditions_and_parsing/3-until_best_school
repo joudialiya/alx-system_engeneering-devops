@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#print "TEXT" 10 times
+# shellcheck disable=SC2034
+TEXT="Best School"
+i=0
+until (( i == 10 ));
+do
+	echo "$TEXT"
+	i=$((i + 1))
+done

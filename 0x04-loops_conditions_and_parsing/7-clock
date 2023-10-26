@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+#print "TEXT" 10 times
+# shellcheck disable=SC2034
+HOURS_MAX=12;
+MINUTES_MAX=60;
+hour=0
+
+while (( hour <= HOURS_MAX ));
+do
+	echo "Hour: $hour"
+	minute=1
+	while (( minute < MINUTES_MAX ));
+	do
+		echo "$minute"
+		minute=$(( minute + 1 ))
+	done
+	hour=$(( hour + 1 ))
+done
