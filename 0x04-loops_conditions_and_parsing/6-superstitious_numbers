@@ -2,9 +2,9 @@
 #print "TEXT" 10 times
 # shellcheck disable=SC2034
 TEXT="Best School"
-TEXT_BAD_JAPAN="bad luck from JAPAN"
-TEXT_BAD_CHINA="bad luck from CHINA"
-TEXT_BAD_ITALY="bad luck from ITALY"
+TEXT_BAD_JAPAN="bad luck from Japan"
+TEXT_BAD_CHINA="bad luck from China"
+TEXT_BAD_ITALY="bad luck from Italy"
 i=1
 MAX=20
 
