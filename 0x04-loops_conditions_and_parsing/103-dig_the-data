@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #print "TEXT" 10 times
 # shellcheck disable=SC2034
-awk '{split($0,a," "); print a[1], a[9]}' <  apache-access.log | uniq -c
+awk '{split($0,a," "); print a[1], a[9]}' <  apache-access.log | uniq -c | sort -r
