@@ -2,4 +2,4 @@
 #print list of processes
 # shellcheck disable=SC2009
 
-ps -A u | grep "bash"
+ps aux --forest | grep "bash"
