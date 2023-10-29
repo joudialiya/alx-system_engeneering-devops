@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #print list of processes
 
-kill -9 5-dont_stop_me_now
+kill -9 4-to_infinity_and_beyond
