@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#print list of processes
+
+pkill -9 -f "bash ./7-highlander"
