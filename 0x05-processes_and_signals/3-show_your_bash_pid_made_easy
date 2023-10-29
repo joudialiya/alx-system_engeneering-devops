@@ -2,4 +2,4 @@
 #print list of processes
 # shellcheck disable=SC2009
 
-ps -A u | grep "bash" | cut -d " " -f 1,2
+pgrep -l "bash"
