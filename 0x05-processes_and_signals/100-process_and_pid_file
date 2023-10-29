@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#print list of processes
+
+trap "echo 'I hate the kill command'; sudo rm '/var/run/myscript.pid'; exit" SIGTERM
+trap "echo 'Y U no love me?!'" SIGINT
+trap "sudo rm '/var/run/myscript.pid'; exit" SIGQUIT
+
+sudo touch "/var/run/myscript.pid"
+echo "$$" > "/var/run/myscript.pid"
+
+while :
+do
+	echo "To infinity and beyond"
+	sleep 2
+done
