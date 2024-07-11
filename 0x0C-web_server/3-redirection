@@ -13,4 +13,4 @@ echo "server {
     }
 }" > /etc/nginx/sites-available/default
 echo "Hello World!" > /var/www/html/index.html
-service nginx reload
+service nginx restart
