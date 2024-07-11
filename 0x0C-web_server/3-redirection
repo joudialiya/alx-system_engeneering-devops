@@ -8,7 +8,7 @@ echo "server {
     listen [::]:80 default_server;
     root   /var/www/html/;
     index  index.html;
-    location =~* ^/redirect_me/?$ {
+    location ~* ^/redirect_me/?$ {
         return 301 https://google.com/;
     }
 }" > /etc/nginx/sites-available/default
