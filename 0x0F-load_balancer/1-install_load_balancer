@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# this script insatlls Haproxy
+
+
+sudo apt update
+sudo apt -y install haproxy
+
+echo '
+frontend joudialiya.tech
+        bind 0:80
+        default_backend web_servers
+
+backend web_servers
+        balance roundrobin
+        server web-01 100.26.236.180:80
+        server web-02 100.25.163.248:80
+' >> /etc/haproxy/haproxy.cfg
+
+service haproxy restart
