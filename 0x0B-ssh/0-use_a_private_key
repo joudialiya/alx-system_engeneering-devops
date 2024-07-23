@@ -3,4 +3,3 @@
 # connect with a prv key
 
 ssh ubuntu@100.26.236.180 -i ~/.ssh/school
-
