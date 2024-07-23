@@ -2,5 +2,5 @@
 
 # connect with a prv key
 
-ssh -i ~/.ssh/school ubuntu@100.26.236.180
+ssh ubuntu@100.26.236.180 -i ~/.ssh/school
 
