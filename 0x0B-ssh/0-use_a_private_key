@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+# connect with a prv key
+
+ssh -i ~/ssh/school ubuntu@100.26.236.180
+
