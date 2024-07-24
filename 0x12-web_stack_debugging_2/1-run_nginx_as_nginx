@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-
-#  fix  
+#  fix
 
 chmod 664 /etc/nginx/nginx.conf
 sed -i 's/Listen 8080/#Listen 8080/g' /etc/apache2/ports.conf
