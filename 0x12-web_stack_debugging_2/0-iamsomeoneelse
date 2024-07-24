@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # this scripts unrs whoami as a user
 
-su "$1" -c whoami
+sudo -u "$1" whoami
