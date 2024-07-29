@@ -14,7 +14,7 @@ def request(emp_id):
         for todo in todos:
             entry = ",".join([
                 '\"' + str(user['id']) + '\"',
-                '\"' + user['name'] + '\"',
+                '\"' + user['username'] + '\"',
                 '\"' + str(todo['completed']) + '\"',
                 '\"' + todo['title'] + '\"'
             ])
