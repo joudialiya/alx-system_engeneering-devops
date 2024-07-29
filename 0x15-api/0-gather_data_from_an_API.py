@@ -1,11 +1,7 @@
 #!/usr/bin/python3
-
 '''This module fetch employes data'''
-
-
 import requests
 import sys
-
 
 
 def request(emp_id):
