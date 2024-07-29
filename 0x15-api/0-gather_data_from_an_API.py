@@ -3,10 +3,9 @@
 '''This module fetch employes data'''
 
 
-import sys
-import json
 import requests
-import numbers
+import sys
+
 
 
 def request(emp_id):
