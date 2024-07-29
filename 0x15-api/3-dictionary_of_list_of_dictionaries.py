@@ -11,7 +11,7 @@ def request():
     FILE_NAME = 'todo_all_employees.json'
     users = requests.get(BASE_URL + '/users').json()
 
-    with open("{}.json".format(FILE_NAME), '+w') as file:
+    with open(FILE_NAME, '+w') as file:
         global_dic = {}
         for user in users:
             todos = requests.get(
