@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''This module fetch employes data'''
+'''export to csv'''
 import requests
 import sys
 
