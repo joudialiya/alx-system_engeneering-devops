@@ -13,4 +13,4 @@ def top_ten(subreddit):
         print("None")
         return
     [print(hot.get("data").get("title"))
-            for hot in result.json().get("data").get("children")]
+     for hot in result.json().get("data").get("children")]
