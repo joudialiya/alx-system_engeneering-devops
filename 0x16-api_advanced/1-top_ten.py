@@ -11,5 +11,6 @@ def top_ten(subreddit):
                           allow_redirects=False)
     if result.status_code >= 300:
         print("None")
-    return [print(hot.get("data").get("title"))
+        return
+    [print(hot.get("data").get("title"))
             for hot in result.json().get("data").get("children")]
